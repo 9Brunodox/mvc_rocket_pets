@@ -3,7 +3,6 @@
 disable=missing-docstring,
         missing-function-docstring,
         missing-class-docstring,
-        catching-too-general-exception,
         consider-using-with,
         unrecognized-option,
 
