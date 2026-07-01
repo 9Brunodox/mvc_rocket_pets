@@ -11,4 +11,7 @@ repos:
           "-sn",
           "--rcfile=.pylintrc",
           "--load-plugins=pylint.extensions.docparams",
+          "src/",
+          "tests/",
         ]
+        pass_filenames: false
