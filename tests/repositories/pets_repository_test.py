@@ -19,8 +19,11 @@ class MockConnection:
             ]
         )
 
-    def __enter__(self): return self
-    def __exit__(self, exc_type, exc_value, traceback): pass
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        pass
 
 class MockConnectionNoResult:
     def __init__(self):
@@ -29,8 +32,11 @@ class MockConnectionNoResult:
 
     def __raise_no_result_found(self, *args, **kwargs):
         raise NoResultFound("No Result Found")
-    def __enter__(self): return self
-    def __exit__(self, exc_type, exc_value, traceback): pass
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        pass
 
 def test_list_pets():
     mock_connection = MockConnection()
