@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class PetsDeleteControllerInterface(ABC):
+class PetDeleterControllerInterface(ABC):
 
     @abstractmethod
     def delete(self, name: str) -> None:

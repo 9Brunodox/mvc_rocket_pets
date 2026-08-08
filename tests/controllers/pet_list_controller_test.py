@@ -1,5 +1,5 @@
 from src.models.sqlite.entities.pets import PetsTable
-from  src.controllers.pets_list_controller import PetsListController
+from  src.controllers.pet_lister_controller import PetListerController
 
 class MockPetsRepository:
     def list_pets(self):
@@ -10,7 +10,7 @@ class MockPetsRepository:
 
 def test_list_pets():
     mock_repository = MockPetsRepository()
-    controller = PetsListController(mock_repository)
+    controller = PetListerController(mock_repository)
     response = controller.list()
 
     expected_response = {
