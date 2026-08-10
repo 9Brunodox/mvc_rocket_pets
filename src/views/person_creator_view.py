@@ -10,5 +10,5 @@ class PersonCreatorView(ViewInterface):
         
     def handle(self, http_request: HttpRequest) -> HttpResponse:
         person_info = http_request.body
-        body_response = self.__controler.create(person_info)
+        body_response = self.__controller.create(person_info)
         return HttpResponse(status_code=201, body=body_response)

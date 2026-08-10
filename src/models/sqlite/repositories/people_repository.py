@@ -53,6 +53,8 @@ class PeopleRepository(PeopleRepositoryInterface):
                     .with_entities(
                         PeopleTable.first_name,
                         PeopleTable.last_name,
+                        PeopleTable.age,
+                        PeopleTable.pet_id,
                         PetsTable.name.label("pet_name"),
                         PetsTable.type.label("pet_type")
                         )
