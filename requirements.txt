@@ -1,3 +1,4 @@
+annotated-types==0.8.0
 astroid==4.0.4
 blinker==1.9.0
 cached-property==2.0.1
@@ -25,6 +26,8 @@ packaging==26.2
 platformdirs==4.10.0
 pluggy==1.6.0
 pre_commit==4.6.0
+pydantic==2.13.4
+pydantic_core==2.46.4
 Pygments==2.20.0
 pylint==4.0.5
 pytest==9.1.1
@@ -35,6 +38,7 @@ SQLAlchemy==2.0.51
 sqlalchemy-orm==1.2.10
 tomlkit==0.15.0
 typing-inspect==0.9.0
+typing-inspection==0.4.3
 typing_extensions==4.15.0
 virtualenv==21.4.2
 Werkzeug==3.1.8
